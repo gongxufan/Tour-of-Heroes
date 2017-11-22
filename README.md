@@ -1,7 +1,7 @@
 ## 说明
 官网的新手教程还是有几处纰漏，包括Location的注入并没有在AppModule中提供Provider，而且其代码组织结构也不是很规范。
 
-我把最终的基于HTTP请求的英雄编辑app的代码写好并对目录结构重新调整，以供新手查阅。
+我把最终的基于HTTP请求的英雄编辑app的代码写好并对目录结构重新调整(api模拟的依赖(angular-in-memory-web-api)已经加入package.json)，以供新手查阅。
 ## 环境
 node和npm以及angular(5)的版本
 ```
@@ -35,10 +35,6 @@ typescript: 2.4.2
 webpack: 3.8.1
 
 ```
-## 依赖
-http模块需要手动安装api服务的模拟程序
-`npm install angular-in-memory-web-api --save`
-
 ## 运行
 ```
 npm install && ng serve
